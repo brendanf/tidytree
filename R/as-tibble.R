@@ -67,6 +67,11 @@ as_tibble.treedata <- function(x, ...) {
     return(res)
 }
 
+##' @method as_tibble tbl_tree
+##' @export
+as_tibble.tbl_tree <- function(x, ...) {
+    return(x)
+}
 
 ##' get associated data stored in treedata object
 ##'
